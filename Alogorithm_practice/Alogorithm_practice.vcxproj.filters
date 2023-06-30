@@ -21,12 +21,18 @@
     <ClCompile Include="Eucild_Algorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Prime.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IH.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Eucild_Algorithm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Prime.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
