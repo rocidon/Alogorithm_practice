@@ -1,9 +1,15 @@
 #include "Eucild_Algorithm.h"
 #include "Prime.h"
+#include "sort.h"
 //#define _Euclid_Aligoritm_
-#define _Prime_
+//#define _Prime_
+#define _SORT_
 
 void main() {
+#ifdef _SORT_
+	Select_sort();
+	Insertion_sort();
+#endif
 #ifdef _Euclid_Aligoritm_
 	//int v = E_Algorithm();
 	int v = adv_E_Algorithm();
