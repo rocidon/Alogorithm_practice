@@ -1,16 +1,21 @@
 #include "sort.h"
 
 void Select_sort() {
-	int numarr[] = { 6,34,4,7,78,3,44,1,5,7,12,8,21 };
-	// 1 3 4 5 6 7 8 12 21 24 34 44 78
+	int numarr[] = { 6,34,4,7,78,3,44,1,5,9,12,8,21 };
+	// 1 3 4 5 6 7 8 9 12 21 24 34 44 78
 	int arrsize = sizeof(numarr) / sizeof(int);
-
-	for(int i=0; i < arrsize-1; i++){
+	int min, minindex;
+	for (int i = 0; i < arrsize - 1; i++) {
+		minindex = i;
+		min = numarr[i];
 		for (int j = i + 1; j < arrsize; j++) {
-			if (numarr[i] > numarr[j]) {
-				swap(numarr[i], numarr[j]);
+			if (min > numarr[j]) {
+				min = numarr[j];
+				minindex = j;
 			}
 		}
+		numarr[minindex] = numarr[i];
+		numarr[i] = min;
 	}
 	printf("Select sort\n");
 	printing_array(numarr, arrsize);
@@ -37,7 +42,24 @@ void Insertion_sort() {
 	printf("\n");
 }
 
-void Indirect_sort() {
+void Bubble_sort() {
+	int numarr[] = { 6,43,24,23,3,32,36,2,1,12,5,18,10,4,8 };
+	// 1 2 3 4 5 6 8 10 12 18 23 24 32 36 43
+	int arrsize = sizeof(numarr) / sizeof(int);
+
+	for (int i = 0; i < arrsize - 1; i++) {
+		for (int j = i + 1; j < arrsize; j++) {
+			if (numarr[i] > numarr[j]) {
+				swap(numarr[i], numarr[j]);
+			}
+		}
+	}
+	printf("Bubble_sort\n");
+	printing_array(numarr, arrsize);
+	printf("\n");
+}
+
+void Shell_sort() {
 	
 }
 

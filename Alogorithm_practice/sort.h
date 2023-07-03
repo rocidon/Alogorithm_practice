@@ -4,5 +4,6 @@
 
 void Select_sort();
 void Insertion_sort();
-void Indirect_sort();
+void Bubble_sort();
+void Shell_sort();
 void printing_array(int *a, int s);
