@@ -10,6 +10,7 @@ void main() {
 	Select_sort();
 	Insertion_sort();
 	Bubble_sort();
+	Shell_sort();
 #endif
 #ifdef _Euclid_Aligoritm_
 	//int v = E_Algorithm();

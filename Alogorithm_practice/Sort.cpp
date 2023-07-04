@@ -60,7 +60,33 @@ void Bubble_sort() {
 }
 
 void Shell_sort() {
+	int numarr[] = { 8,54,23,11,2,3,12,5,46,52,14,57,7,22};
+	// 2 3 5 7 8 11 12 14 22 23 46 52 54 57
+	int arrsize = sizeof(numarr) / sizeof(int);
+	int min, minindex;
+	int gap = arrsize/2;
+	if (gap % 2 == 0) { gap++; }
 	
+	while (gap){
+		for (int i = 0; i < gap; i++) {
+			for (int j = i; j < arrsize-1; j += gap) {
+				minindex = j;
+				min = numarr[j];
+				for (int k = j+gap; k < arrsize; k += gap) {
+					if (min > numarr[k]) {
+						min = numarr[k];
+						minindex = k;
+					}
+				}
+				numarr[minindex] = numarr[j];
+				numarr[j] = min;
+			}
+		}
+		gap /= 2;		
+	}
+	printf("Shell_sort\n");
+	printing_array(numarr, arrsize);
+	printf("\n");
 }
 
 void printing_array(int *a, int s) {
