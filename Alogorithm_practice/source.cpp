@@ -1,11 +1,13 @@
 #include "Eucild_Algorithm.h"
 #include "Prime.h"
 #include "sort.h"
+#include "Baek.h"
 //#define _Euclid_Aligoritm_
 //#define _Prime_
-#define _SORT_
+//#define _SORT_
 
 void main() {
+	Solve();
 #ifdef _SORT_
 	Select_sort();
 	Insertion_sort();

@@ -139,12 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Baek.cpp" />
     <ClCompile Include="Eucild_Algorithm.cpp" />
     <ClCompile Include="Prime.cpp" />
     <ClCompile Include="Sort.cpp" />
     <ClCompile Include="source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Baek.h" />
     <ClInclude Include="Eucild_Algorithm.h" />
     <ClInclude Include="IH.h" />
     <ClInclude Include="Prime.h" />
